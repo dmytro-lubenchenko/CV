@@ -235,14 +235,15 @@ hr {
     overflow: hidden;
     width: 2.5rem;
     height: 2.5rem;
-}
-.github-icon {
     border-radius: 50%;
-    background-color: #ffffff;
+    background-color: #0077B5;
     -webkit-border-radius: 50%;
     -moz-border-radius: 50%;
     -ms-border-radius: 50%;
     -o-border-radius: 50%;
+}
+.github-icon {
+    background-color: #ffffff;
 }
 .item-social__body {
     display: flex;
@@ -263,22 +264,12 @@ hr {
 .linkedin {
 }
 .linkedin-icon {
-    border-radius: 50%;
     background-color: #0077B5;
-    -webkit-border-radius: 50%;
-    -moz-border-radius: 50%;
-    -ms-border-radius: 50%;
-    -o-border-radius: 50%;
 }
 
 .djinni-icon {
     max-width: 2.5rem;
-    border-radius: 50%;
-    background-color: #0077B5;
-    -webkit-border-radius: 50%;
-    -moz-border-radius: 50%;
-    -ms-border-radius: 50%;
-    -o-border-radius: 50%;
+
 }
 
 /* -------------------------------------- */
