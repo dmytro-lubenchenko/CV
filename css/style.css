@@ -272,6 +272,7 @@ hr {
 }
 
 .djinni-icon {
+    max-width: 2.5rem;
     border-radius: 50%;
     background-color: #0077B5;
     -webkit-border-radius: 50%;
@@ -332,6 +333,7 @@ hr {
 .linkedin {
 }
 .usa-icon {
+    max-width: 2.5rem;
 }
 
 /* -------------------------------------- */
