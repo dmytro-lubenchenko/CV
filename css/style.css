@@ -523,6 +523,18 @@ hr {
     width: 75px;
     height: 75px;
 }
+.main__item:hover .role__icon img {
+    transform: scale(1.3);
+    -webkit-transform: scale(1.3);
+    -moz-transform: scale(1.3);
+    -ms-transform: scale(1.3);
+    -o-transform: scale(1.3);
+    transition: all .4s ease 0s;
+    -webkit-transition: all .4s ease 0s;
+    -moz-transition: all .4s ease 0s;
+    -ms-transition: all .4s ease 0s;
+    -o-transition: all .4s ease 0s;
+}
 .role__body {
     display: flex;
     flex-direction: column;
@@ -639,6 +651,92 @@ item-project__description-title:not(:last-child) {
     padding: 8px;
 }
 .item-project__address-link {
+}
+
+/* -------------------------------------- */
+
+.main__education {
+}
+.education-main {
+}
+.education-main__body {
+    padding-left: 1.625rem;
+    position: relative;
+}
+.main__horizontal {
+}
+.experience-main__title {
+}
+.heading {
+}
+.education-main__items {
+    display: flex;
+    justify-content: center;
+    column-gap: 12px;
+}
+.education-main__item {
+    background-color: #2E2E48;
+    padding: 24px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 12px;
+}
+.education-main__item:first-child {
+    border-radius: 0.75rem 0 0 0.75rem;
+    -webkit-border-radius: 0.75rem 0 0 0.75rem;
+    -moz-border-radius: 0.75rem 0 0 0.75rem;
+    -ms-border-radius: 0.75rem 0 0 0.75rem;
+    -o-border-radius: 0.75rem 0 0 0.75rem;
+}
+.education-main__item:last-child {
+    border-radius: 0 0.75rem 0.75rem 0;
+    -webkit-border-radius: 0 0.75rem 0.75rem 0;
+    -moz-border-radius: 0 0.75rem 0.75rem 0;
+    -ms-border-radius: 0 0.75rem 0.75rem 0;
+    -o-border-radius: 0 0.75rem 0.75rem 0;
+}
+.item-education {
+}
+.item-education__place {
+    display: flex;
+    align-items: center;
+    column-gap: 24px;
+}
+.place__image {
+    display: inline-block;
+    background-color: #fff;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+.place__image img {
+    padding: .8em;
+    width: 6em;
+    height: 6em;
+}
+.place__title {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 22px;
+    color: #E2E6EE;
+}
+.item-education__about {
+}
+.about__profession {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 22px;
+    color: #E2E6EE;
+}
+.about__story {
+    display: flex;
+    column-gap: 10px;
+}
+.about__period {
+}
+.about__location {
 }
 
 /* Large desktops and laptops */
