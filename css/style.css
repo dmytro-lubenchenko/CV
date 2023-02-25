@@ -226,8 +226,6 @@ hr {
     letter-spacing: 0.03em;
     color: #ACB1C3;
 }
-.github {
-}
 .item-social__icon {
     display: flex;
     justify-content: center;
@@ -236,7 +234,6 @@ hr {
     width: 2.5rem;
     height: 2.5rem;
     border-radius: 50%;
-    background-color: #0077B5;
     -webkit-border-radius: 50%;
     -moz-border-radius: 50%;
     -ms-border-radius: 50%;
@@ -266,11 +263,13 @@ hr {
 .linkedin-icon {
     background-color: #0077B5;
 }
+.linkedin-icon img {
+}
 
 .djinni-icon {
 }
 .djinni-icon  img {
-    max-width: 2.5rem;
+
 }
 
 /* -------------------------------------- */
@@ -321,8 +320,6 @@ hr {
     font-size: 16px;
     line-height: 0.75rem;
     color: #D9DFE8;
-}
-.linkedin {
 }
 .usa-icon {
 }
@@ -525,5 +522,12 @@ hr {
     }
     hr {
         display: none;
+    }
+}
+
+@media (max-width: 1024px) {
+    .contacts__items {
+        justify-content: center;
+        flex-wrap: wrap;
     }
 }
