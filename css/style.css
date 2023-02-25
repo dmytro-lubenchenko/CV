@@ -268,8 +268,9 @@ hr {
 }
 
 .djinni-icon {
+}
+.djinni-icon  img {
     max-width: 2.5rem;
-
 }
 
 /* -------------------------------------- */
