@@ -848,9 +848,9 @@ body {
   -o-border-radius: 50%;
 }
 .skills__column-ico {
-  margin: 0.8rem 0.5rem 0.8rem 0.5rem;
-  width: 1.6675rem;
-  height: 1.0025rem;
+  margin: 0.4rem;
+  width: 1.8rem;
+  height: 1.8rem;
 }
 .skills__column-list {
   flex: 0 1 100%;
