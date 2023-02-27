@@ -42,7 +42,7 @@ body {
 }
 @mixin main-horizontal-divider {
     position: relative;
-    &::after {
+    &:not(:last-child):after {
         content: '';
         position: absolute;
         background-color: #2E2E48;
@@ -80,7 +80,7 @@ body {
         align-self: start;
     }
     &__main {
-        padding: 3rem 2.5rem 0 3rem;
+        padding: 3rem 2.5rem 3rem 3rem;
         display: grid;
         grid-template-columns: 1fr;
         align-self: start;
@@ -734,9 +734,9 @@ body {
         -o-border-radius: 50%;
 }
     &__column-ico {
-        padding: .4rem;
-        width: 3rem;
-        height: 3rem;
+        margin: .8rem .5rem .8rem .5rem;
+        width: 1.6675rem;
+        height: 1.0025rem;
     }
     &__column-subject {}
     &__column-list {
@@ -762,17 +762,17 @@ body {
                 grid-template-columns: repeat(2, 1fr);
                 grid-template-rows: repeat(2, 1fr);
                 border-left: 0.0625rem solid #ffffff1a;
+                    & .skills__column-skill:first-child {
+                        grid-row: 1 / span 3;
+                        align-self: center;
+                        border-right: 1px solid #ffffff1a;
+                    }
             }
     }
     &__column-skill {
     }
 }
 .column-skills {
-}
-.vertical-skill {
-    grid-row: 1 / span 3;
-    align-self: center;
-    border-right: 1px solid #ffffff1a;
 }
 .tools {
     &__title {
@@ -807,7 +807,10 @@ body {
         padding: 1.1875rem 0;
     }
     &__list-icon {}
-    &__list-ico {}
+    &__list-ico {
+        width: 48px;
+        height: 48px;
+    }
     &__list-subject {}
     &__list-description {}
 }

@@ -29,7 +29,7 @@ body {
   align-self: start;
 }
 .wrapper__main {
-  padding: 3rem 2.5rem 0 3rem;
+  padding: 3rem 2.5rem 3rem 3rem;
   display: grid;
   grid-template-columns: 1fr;
   align-self: start;
@@ -312,7 +312,7 @@ body {
   position: relative;
   padding: 0 0 0 2.5rem;
 }
-.main__about::after {
+.main__about:not(:last-child):after {
   content: "";
   position: absolute;
   background-color: #2E2E48;
@@ -340,7 +340,7 @@ body {
   position: relative;
   padding: 0 0 0 2.5rem;
 }
-.main__experience::after {
+.main__experience:not(:last-child):after {
   content: "";
   position: absolute;
   background-color: #2E2E48;
@@ -368,7 +368,7 @@ body {
   position: relative;
   padding: 0 0 0 2.5rem;
 }
-.main__projects::after {
+.main__projects:not(:last-child):after {
   content: "";
   position: absolute;
   background-color: #2E2E48;
@@ -396,7 +396,7 @@ body {
   position: relative;
   padding: 0 0 0 2.5rem;
 }
-.main__education::after {
+.main__education:not(:last-child):after {
   content: "";
   position: absolute;
   background-color: #2E2E48;
@@ -424,7 +424,7 @@ body {
   position: relative;
   padding: 0 0 0 2.5rem;
 }
-.main__courses::after {
+.main__courses:not(:last-child):after {
   content: "";
   position: absolute;
   background-color: #2E2E48;
@@ -452,7 +452,7 @@ body {
   position: relative;
   padding: 0 0 0 2.5rem;
 }
-.main__skills::after {
+.main__skills:not(:last-child):after {
   content: "";
   position: absolute;
   background-color: #2E2E48;
@@ -480,7 +480,7 @@ body {
   position: relative;
   padding: 0 0 0 2.5rem;
 }
-.main__tools::after {
+.main__tools:not(:last-child):after {
   content: "";
   position: absolute;
   background-color: #2E2E48;
@@ -848,9 +848,9 @@ body {
   -o-border-radius: 50%;
 }
 .skills__column-ico {
-  padding: 0.4rem;
-  width: 3rem;
-  height: 3rem;
+  margin: 0.8rem 0.5rem 0.8rem 0.5rem;
+  width: 1.6675rem;
+  height: 1.0025rem;
 }
 .skills__column-list {
   flex: 0 1 100%;
@@ -878,12 +878,11 @@ body {
   grid-template-rows: repeat(2, 1fr);
   border-left: 0.0625rem solid rgba(255, 255, 255, 0.1019607843);
 }
-.vertical-skill {
+.skills__column-item:nth-child(4) .skills__column-skill:first-child {
   grid-row: 1/span 3;
   align-self: center;
   border-right: 1px solid rgba(255, 255, 255, 0.1019607843);
 }
-
 .tools__title:not(:last-child) {
   margin-bottom: 1rem;
 }
@@ -914,4 +913,8 @@ body {
   text-align: center;
   background-color: #2E2E48;
   padding: 1.1875rem 0;
+}
+.tools__list-ico {
+  width: 48px;
+  height: 48px;
 }/*# sourceMappingURL=style.css.map */
