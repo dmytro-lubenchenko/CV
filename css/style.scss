@@ -70,6 +70,18 @@ body {
 @mixin main-padding {
     padding: 0 0 0 2.5rem;
 }
+@mixin location-icon {
+    position: relative;
+    &::before {
+        content: '';
+        position: absolute;
+        top: 0.125rem;
+        left: -0.875rem;
+        width: 100%;
+        height: 100%;
+        background: url('../img/main/experience/geo_icon.svg') 0 0 / 0.625rem 0.625rem no-repeat;
+    }
+}
 
 .wrapper {
     &__aside {
@@ -444,16 +456,7 @@ body {
     }
     &__list-period {}
     &__list-location {
-        position: relative;
-        &::before {
-            content: '';
-            position: absolute;
-            top: 0.125rem;
-            left: -0.875rem;
-            width: 100%;
-            height: 100%;
-            background: url('../img/main/experience/geo_icon.svg') 0 0 / 0.625rem 0.625rem no-repeat;
-        }
+        @include location-icon;
     }
     &__list-role {
         display: flex;
@@ -534,12 +537,13 @@ body {
         border-radius: 0.75rem;
     }
     &__list-item {
+        display: flex;
+        flex-direction: column;
         padding: 1.5rem;
         background-color: #2E2E48;
     }
     &__list-image {
         max-width: 100%;
-        overflow: hidden;
         &:not(:last-child) {
             margin-bottom: 1rem;
         }
@@ -564,6 +568,7 @@ body {
         }
     }
     &__list-text {
+        flex: 1 0 auto;
         font-weight: 400;
         font-size: 0.875rem;
         line-height: 1.28;
@@ -579,7 +584,6 @@ body {
         column-gap: 0.375rem;
     }
     &__list-icon {
-        display: inline-block;
         background-color: #2A337E;
         border-radius: 50%;
         -webkit-border-radius: 50%;
@@ -665,16 +669,7 @@ body {
     }
     &__list-period {}
     &__list-location {
-        position: relative;
-        &::before {
-            content: '';
-            position: absolute;
-            top: 0.125rem;
-            left: -0.875rem;
-            width: 100%;
-            height: 100%;
-            background: url('../img/main/experience/geo_icon.svg') 0 0 / 0.625rem 0.625rem no-repeat;
-        }
+        @include location-icon;
     }
 }
 .courses {
@@ -697,19 +692,82 @@ body {
     &__list-item {
         display: flex;
         justify-content: space-between;
+        align-items: center;
         padding: 1rem 1.5rem;
         background-color: #2E2E48;
     }
-    &__list-story {}
-    &__list-period {}
-    &__list-location {}
-    &__list-role {}
-    &__list-icon {}
-    &__list-ico {}
-    &__list-body {}
-    &__list-theme {}
-    &__list-company {}
+    &__list-story {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        row-gap: 0.625rem;
+    }
+    &__list-period {
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 1.33;
+        letter-spacing: 0.02em;
+        color: #D9DFE8;
+    }
+    &__list-location {
+        @include location-icon;
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 1.33;
+        letter-spacing: 0.02em;
+        color: #ACB1C3;
+    }
+    &__list-role {
+        display: flex;
+        align-items: center;
+        column-gap: 1rem;
+    }
+    &__list-icon {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 3.8rem;
+        height: 3.8rem;
+        text-align: center;
+        border-radius: 15px;
+        -webkit-border-radius: 15px;
+        -moz-border-radius: 15px;
+        -ms-border-radius: 15px;
+        -o-border-radius: 15px;
 }
+    &__list-ico {
+        max-width: 3.5rem;
+    }
+    &__list-body {
+        display: flex;
+        flex-direction: column;
+        row-gap: 0.25rem;
+    }
+    &__list-theme {
+        font-weight: 400;
+        font-size: 0.875rem;
+        line-height: 1.28;
+        letter-spacing: 0.02em;
+        color: #ACB1C3;
+    }
+    &__list-company {
+        font-weight: 500;
+        font-size: 1rem;
+        line-height: 1.25;
+        color: #E2E6EE;
+    }
+}
+.soft-serve {
+    background: linear-gradient(45deg, #0fc684, #c7d724);
+}
+.epam {
+    background-color: #76CDD8;
+}
+.go-it {
+    background-color: #562A87;
+}
+
 .skills {
     &__title {
         &:not(:last-child) {
