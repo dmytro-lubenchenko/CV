@@ -29,7 +29,7 @@ body {
   align-self: start;
 }
 .wrapper__main {
-  padding: 3rem 2.5rem 3rem 1rem;
+  padding: 3rem 2rem 3rem 1rem;
   display: grid;
   grid-template-columns: 1fr;
   align-self: start;
