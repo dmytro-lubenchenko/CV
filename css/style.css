@@ -942,7 +942,7 @@ body {
   font-weight: 500;
   font-size: 0.875rem;
   line-height: 1.28;
-  color: #E2E6EE;
+  color: #e2e6ee;
 }
 .skills__column-list {
   flex: 0 1 100%;
@@ -1051,7 +1051,7 @@ body {
 .tools__list-item {
   padding: 1.1875rem 0;
   text-align: center;
-  background-color: #2E2E48;
+  background-color: #2e2e48;
 }
 .tools__list-icon {
   display: inline-block;
@@ -1127,5 +1127,12 @@ body {
   .skills__column-list {
     flex: 0 1 100%;
     justify-content: space-around;
+  }
+}
+@media (max-width: 767.98px) {
+  .wrapper {
+    display: grid;
+    grid-template-columns: 1fr;
+    padding: 0 15px;
   }
 }/*# sourceMappingURL=style.css.map */
