@@ -956,4 +956,593 @@ body {
 }
 
 
-@import 'media';
+
+
+@media (max-width: 1100px) {
+    @mixin main-padding {
+        padding: 0 0 0 2rem;
+    }
+    .wrapper {
+		&__aside {}
+		&__main {}
+}
+.aside {
+		&__personal {}
+		&__contacts {}
+		&__social {}
+		&__languages {}
+}
+.personal {
+		&_quote-text {}
+		&__image {}
+		&__userpic {}
+		&__heading {}
+		&__heading-title {
+            font-size: 1.3rem;
+            line-height: 1.25;
+            letter-spacing: -0.04em;
+        }
+		&__heading-position {
+            font-size: 1.2rem;
+            line-height: 1.33;
+            letter-spacing: 0.02em;
+        }
+		&__quote {}
+        &__quote-text {
+            font-size: 1rem;
+            line-height: 1.33;
+        }
+		&__quote-author {}
+}
+.aside--hr {
+}
+.contacts {
+		&__caption {}
+		&__list {}
+		&__list-item {}
+		&__list-icon {}
+		&__list-ico {}
+		&__list-content {}
+		&__list-subject {}
+		&__list-link {}
+}
+.social {
+		&__caption {}
+		&__list {}
+		&__list-item {}
+		&__list-icon {}
+		&__list-ico {}
+		&__list-content {}
+		&__list-subject {}
+		&__list-link {}
+}
+.github {
+}
+.linkedin {
+}
+.djinni {
+}
+.languages {
+		&__caption {}
+		&__list {}
+		&__list-item {}
+		&__list-icon {}
+		&__list-ico {}
+		&__list-content {}
+		&__list-subject {}
+		&__list-link {}
+}
+.main {
+		&__about {
+            @include main-padding;
+        }
+		&__experience {
+            @include main-padding;
+        }
+		&__projects {
+            @include main-padding;
+        }
+		&__education {
+            @include main-padding;
+        }
+		&__courses {
+            @include main-padding;
+        }
+		&__skills {
+            @include main-padding;
+        }
+		&__tools {
+            @include main-padding;
+        }
+}
+.about {
+		&__title {}
+		&__text {}
+}
+.title {
+}
+.experience {
+		&__title {}
+		&__list {}
+		&__list-item {}
+		&__list-content {}
+		&__list-story {}
+		&__list-period {}
+		&__list-location {}
+		&__list-role {}
+		&__list-icon {}
+		&__list-ico {}
+		&__list-body {}
+		&__list-company {}
+		&__list-position {}
+		&__list-description {}
+}
+.present {
+}
+.list {
+		&__period {}
+}
+.list-description {
+		&__item {}
+}
+.projects {
+		&__title {}
+		&__list {}
+		&__list-item {}
+		&__list-image {}
+		&__list-img {}
+		&__list-subject {}
+		&__list-text {}
+		&__list-content {}
+		&__list-icon {}
+		&__list-ico {}
+		&__list-link {}
+}
+.education {
+		&__title {}
+		&__list {}
+		&__list-item {}
+		&__list-content {}
+		&__list-icon {}
+		&__list-ico {}
+		&__list-subject {}
+		&__list-profession {}
+		&__list-story {}
+		&__list-period {}
+		&__list-location {}
+}
+.courses {
+		&__title {}
+		&__list {}
+		&__list-item {}
+		&__list-role {}
+		&__list-icon {}
+		&__list-ico {}
+		&__list-body {}
+		&__list-theme {}
+		&__list-company {}
+		&__list-story {}
+		&__list-period {}
+		&__list-location {}
+}
+.soft-serve {
+}
+.epam {
+}
+.go-it {
+}
+.skills {
+		&__title {}
+		&__column {}
+		&__column-header {}
+		&__column-icon {}
+		&__column-ico {}
+		&__column-subject {}
+		&__column-list {}
+		&__column-item {}
+		&__column-skill {}
+		&__column-second-grid {}
+		&__column-vertical {}
+		&__column-grid {}
+		&__column-span {}
+		&__column-horizontal {}
+}
+.column-skills {
+}
+.tools {
+		&__title {}
+		&__list {}
+		&__list-column {}
+		&__column-header {}
+		&__column-icon {}
+		&__column-ico {}
+		&__column-subject {}
+		&__column-items {}
+		&__list-item {}
+		&__list-icon {}
+		&__list-ico {}
+		&__list-subject {}
+		&__column-items-second {}
+		&__list-icon-rounded {}
+		&__list-ico-rounded {}
+		&__list-description {}
+}
+
+    
+}
+
+@media (max-width: 991.98px) {
+    .wrapper {
+		&__aside {}
+		&__main {}
+}
+.aside {
+		&__personal {}
+		&__contacts {}
+		&__social {}
+		&__languages {}
+}
+.personal {
+		&_quote-text {}
+		&__image {}
+		&__userpic {}
+		&__heading {}
+		&__heading-title {}
+		&__heading-position {}
+		&__quote {}
+		&__quote-author {}
+}
+.aside--hr {
+}
+.contacts {
+		&__caption {}
+		&__list {}
+		&__list-item {}
+		&__list-icon {}
+		&__list-ico {}
+		&__list-content {}
+		&__list-subject {}
+		&__list-link {}
+}
+.social {
+		&__caption {}
+		&__list {}
+		&__list-item {}
+		&__list-icon {}
+		&__list-ico {}
+		&__list-content {}
+		&__list-subject {}
+		&__list-link {}
+}
+.github {
+}
+.linkedin {
+}
+.djinni {
+}
+.languages {
+		&__caption {}
+		&__list {}
+		&__list-item {}
+		&__list-icon {}
+		&__list-ico {}
+		&__list-content {}
+		&__list-subject {}
+		&__list-link {}
+}
+.main {
+		&__about {}
+		&__experience {}
+		&__projects {}
+		&__education {}
+		&__courses {}
+		&__skills {}
+		&__tools {}
+}
+.about {
+		&__title {}
+		&__text {}
+}
+.title {
+}
+.experience {
+		&__title {}
+		&__list {}
+		&__list-item {
+            flex-direction: column;
+            row-gap: .5rem;
+        }
+		&__list-content {}
+		&__list-story {}
+		&__list-period {}
+		&__list-location {}
+		&__list-role {}
+		&__list-icon {}
+		&__list-ico {}
+		&__list-body {}
+		&__list-company {}
+		&__list-position {}
+		&__list-description {}
+}
+.present {
+}
+.list {
+		&__period {}
+}
+.list-description {
+		&__item {}
+}
+.projects {
+		&__title {}
+		&__list {}
+		&__list-item {}
+		&__list-image {}
+		&__list-img {}
+		&__list-subject {}
+		&__list-text {}
+		&__list-content {}
+		&__list-icon {}
+		&__list-ico {}
+		&__list-link {}
+}
+.education {
+		&__title {}
+		&__list {}
+		&__list-item {}
+		&__list-content {}
+		&__list-icon {}
+		&__list-ico {}
+		&__list-subject {}
+		&__list-profession {}
+		&__list-story {}
+		&__list-period {}
+		&__list-location {}
+}
+.courses {
+		&__title {}
+		&__list {}
+		&__list-item {}
+		&__list-role {}
+		&__list-icon {}
+		&__list-ico {}
+		&__list-body {}
+		&__list-theme {}
+		&__list-company {}
+		&__list-story {}
+		&__list-period {}
+		&__list-location {}
+}
+.soft-serve {
+}
+.epam {
+}
+.go-it {
+}
+.skills {
+		&__title {}
+		&__column {
+            flex-direction: column;
+            align-items: flex-start;
+        }
+		&__column-header {}
+		&__column-icon {}
+		&__column-ico {}
+		&__column-subject {}
+		&__column-list {
+            flex: 0 1 100%;
+            justify-content: space-around;
+        }
+		&__column-item {}
+		&__column-skill {}
+		&__column-second-grid {}
+		&__column-vertical {}
+		&__column-grid {}
+		&__column-span {}
+		&__column-horizontal {}
+}
+.column-skills {
+}
+.tools {
+		&__title {}
+		&__list {}
+		&__list-column {}
+		&__column-header {}
+		&__column-icon {}
+		&__column-ico {}
+		&__column-subject {}
+		&__column-items {}
+		&__list-item {}
+		&__list-icon {}
+		&__list-ico {}
+		&__list-subject {}
+		&__column-items-second {}
+		&__list-icon-rounded {}
+		&__list-ico-rounded {}
+		&__list-description {}
+}
+
+    
+}
+
+@media (max-width: 767.98px) {
+	.wrapper {
+		&__aside {}
+		&__main {}
+}
+.aside {
+		&__personal {}
+		&__contacts {}
+		&__social {}
+		&__languages {}
+}
+.personal {
+		&__image {}
+		&__userpic {}
+		&__heading {}
+		&__heading-title {}
+		&__heading-position {}
+		&__quote {}
+		&__quote-text {}
+		&__quote-author {}
+}
+.aside--hr {
+}
+.contacts {
+		&__caption {}
+		&__list {}
+		&__list-item {}
+		&__list-icon {}
+		&__list-ico {}
+		&__list-content {}
+		&__list-subject {}
+		&__list-link {}
+}
+.social {
+		&__caption {}
+		&__list {}
+		&__list-item {}
+		&__list-icon {}
+		&__list-ico {}
+		&__list-content {}
+		&__list-subject {}
+		&__list-link {}
+}
+.github {
+}
+.linkedin {
+}
+.djinni {
+}
+.languages {
+		&__caption {}
+		&__list {}
+		&__list-item {}
+		&__list-icon {}
+		&__list-ico {}
+		&__list-content {}
+		&__list-subject {}
+		&__list-link {}
+}
+.main {
+		&__about {}
+		&__experience {}
+		&__projects {}
+		&__education {}
+		&__courses {}
+		&__skills {}
+		&__tools {}
+}
+.about {
+		&__title {}
+		&__text {}
+}
+.title {
+}
+.experience {
+		&__title {}
+		&__list {}
+		&__list-item {}
+		&__list-content {}
+		&__list-story {}
+		&__list-period {}
+		&__list-location {}
+		&__list-role {}
+		&__list-icon {}
+		&__list-ico {}
+		&__list-body {}
+		&__list-company {}
+		&__list-position {}
+		&__list-description {}
+}
+.present {
+}
+.list {
+		&__period {}
+}
+.list-description {
+		&__item {}
+}
+.projects {
+		&__title {}
+		&__list {}
+		&__list-item {}
+		&__list-image {}
+		&__list-img {}
+		&__list-subject {}
+		&__list-text {}
+		&__list-content {}
+		&__list-icon {}
+		&__list-ico {}
+		&__list-link {}
+}
+.education {
+		&__title {}
+		&__list {}
+		&__list-item {}
+		&__list-content {}
+		&__list-icon {}
+		&__list-ico {}
+		&__list-subject {}
+		&__list-profession {}
+		&__list-story {}
+		&__list-period {}
+		&__list-location {}
+}
+.courses {
+		&__title {}
+		&__list {}
+		&__list-item {}
+		&__list-role {}
+		&__list-icon {}
+		&__list-ico {}
+		&__list-body {}
+		&__list-theme {}
+		&__list-company {}
+		&__list-story {}
+		&__list-period {}
+		&__list-location {}
+}
+.soft-serve {
+}
+.epam {
+}
+.go-it {
+}
+.skills {
+		&__title {}
+		&__column {}
+		&__column-header {}
+		&__column-icon {}
+		&__column-ico {}
+		&__column-subject {}
+		&__column-list {}
+		&__column-item {}
+		&__column-skill {}
+		&__column-second-grid {}
+		&__column-vertical {}
+		&__column-grid {}
+		&__column-span {}
+		&__column-horizontal {}
+}
+.column-skills {
+}
+.tools {
+		&__title {}
+		&__list {}
+		&__list-column {}
+		&__column-header {}
+		&__column-icon {}
+		&__column-ico {}
+		&__column-subject {}
+		&__column-items {}
+		&__list-item {}
+		&__list-icon {}
+		&__list-ico {}
+		&__list-subject {}
+		&__column-items-second {}
+		&__list-icon-rounded {}
+		&__list-ico-rounded {}
+		&__list-description {}
+}
+
+}
