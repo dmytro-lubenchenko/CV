@@ -205,7 +205,7 @@ body {
             color: grey;
         }
     }
-    &_quote-text {
+    &__quote-text {
         font-family: "Outfit";
         font-weight: 500;
         font-size: 1.125rem;
@@ -500,8 +500,8 @@ body {
     &__list-description {
         flex: 0 1 70%;
         font-weight: 400;
-        font-size: 0.625rem;
-        line-height: 1.4;
+        font-size: 0.75rem;
+        line-height: 1.28;
         letter-spacing: 0.02em;
         color: #acb1c3;
     }
@@ -708,7 +708,7 @@ body {
     }
     &__list-period {
         font-weight: 400;
-        font-size: 12px;
+        font-size: 0.75rem;
         line-height: 1.33;
         letter-spacing: 0.02em;
         color: #d9dfe8;
@@ -716,7 +716,7 @@ body {
     &__list-location {
         @include location-icon;
         font-weight: 400;
-        font-size: 12px;
+        font-size: 0.75rem;
         line-height: 1.33;
         letter-spacing: 0.02em;
         color: #acb1c3;
@@ -734,12 +734,12 @@ body {
         width: 3.8rem;
         height: 3.8rem;
         text-align: center;
-        border-radius: 15px;
-        -webkit-border-radius: 15px;
-        -moz-border-radius: 15px;
-        -ms-border-radius: 15px;
-        -o-border-radius: 15px;
-    }
+        border-radius: 0.9375rem;
+        -webkit-border-radius: 0.9375rem;
+        -moz-border-radius: 0.9375rem;
+        -ms-border-radius: 0.9375rem;
+        -o-border-radius: 0.9375rem;
+}
     &__list-ico {
         max-width: 3.5rem;
     }
@@ -784,7 +784,6 @@ body {
         column-gap: 3rem;
     }
     &__column-header {
-        flex: 0 1 auto;
     }
     &__column-icon {
         background: #2a337e;
@@ -822,7 +821,7 @@ body {
         -o-border-radius: 1rem;
     }
     &__column-item {
-        flex: 1 1 auto;
+        flex: 0 1 100%;
         padding: 0.875rem 0;
         display: grid;
         align-content: center;
@@ -833,7 +832,7 @@ body {
     }
     &__column-horizontal {
         justify-self: center;
-        height: .5px;
+        height: 0.0313rem;
         width: 40%;
         background-color: #ffffff1a;
     }
@@ -841,10 +840,10 @@ body {
         &::after {
             content: "";
             position: absolute;
-            width: 0.5px;
-            height: 50px;
-            top: -14px;
-            right: -17px;
+            width: 0.0313rem;
+            height: 3.125rem;
+            top: -0.875rem;
+            right: -1.0625rem;
             background-color: #ffffff1a;
         }
     }
@@ -855,13 +854,13 @@ body {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         grid-template-rows: repeat(2, 1fr);
-        column-gap: 32px;
+        column-gap: 2rem;
         align-items: center;
     }
     &__column-second-grid {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
-        column-gap: 32px;
+        column-gap: 2rem;
         align-items: center;
     }
 }
@@ -903,36 +902,58 @@ body {
         grid-template-columns: repeat(4, 1fr);
         gap: 0.5rem;
         overflow: hidden;
-        border-radius: 15px;
-        -webkit-border-radius: 15px;
-        -moz-border-radius: 15px;
-        -ms-border-radius: 15px;
-        -o-border-radius: 15px;
-    }
+        border-radius: 0.9375rem;
+        -webkit-border-radius: 0.9375rem;
+        -moz-border-radius: 0.9375rem;
+        -ms-border-radius: 0.9375rem;
+        -o-border-radius: 0.9375rem;
+}
     &__column-items-second {
         display: grid;
-        grid-template-columns: repeat(5, 1fr);
+        grid-template-columns: repeat(3, 1fr);
         gap: 0.5rem;
         overflow: hidden;
-        border-radius: 15px;
-        -webkit-border-radius: 15px;
-        -moz-border-radius: 15px;
-        -ms-border-radius: 15px;
-        -o-border-radius: 15px;
-    }
+        border-radius: 0.9375rem;
+        -webkit-border-radius: 0.9375rem;
+        -moz-border-radius: 0.9375rem;
+        -ms-border-radius: 0.9375rem;
+        -o-border-radius: 0.9375rem;
+}
     &__list-item {
-        padding: 0.5938rem 0;
+        padding: 1.1875rem 0;
         text-align: center;
         background-color: #2E2E48;
     }
     &__list-icon {
-    }
+        display: inline-block;
+        background-color: #5436a3;
+        border-radius: 0.3125rem;
+        -webkit-border-radius: 0.3125rem;
+        -moz-border-radius: 0.3125rem;
+        -ms-border-radius: 0.3125rem;
+        -o-border-radius: 0.3125rem;
+}
+    &__list-icon-rounded {
+        background-color: transparent;
+        overflow: hidden;
+        -webkit-border-radius: 50%;
+        -moz-border-radius: 50%;
+        -ms-border-radius: 50%;
+        -o-border-radius: 50%;
+}
     &__list-ico {
-        width: 3rem;
-        height: 3rem;
+        padding: .5rem;
+        width: 4rem;
+        height: 4rem;
+    }
+    &__list-ico-rounded {
+        border-radius: 50%;
     }
     &__list-subject {
     }
     &__list-description {
     }
 }
+
+
+@import 'media';
