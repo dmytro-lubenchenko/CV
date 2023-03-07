@@ -534,8 +534,8 @@ body {
 	}
 	&__list {
 		display: grid;
-		grid-template-columns: repeat(2, 1fr);
-		justify-content: center;
+		grid-template-columns: 1fr 1fr;
+		justify-items: center;
 		gap: 0.5rem;
 		overflow: hidden;
 		border-radius: 0.75rem;
