@@ -100,7 +100,7 @@ body {
 		grid-gap: 3rem;
 	}
 	display: grid;
-	grid-template-columns: max-content 100%;
+	grid-template-columns: max-content 1fr;
 	max-width: 90rem;
 	margin: 0 auto;
 }
@@ -1831,6 +1831,7 @@ body {
 			row-gap: 8px;
 	}
 		&__list-role {
+			align-self: start;
 		}
 		&__list-icon {
 		}
@@ -1843,6 +1844,7 @@ body {
 		&__list-company {
 		}
 		&__list-story {
+			align-self: flex-end;
 		}
 		&__list-period {
 		}
