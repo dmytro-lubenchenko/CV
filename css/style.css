@@ -17,7 +17,7 @@ body {
 
 .wrapper {
   display: grid;
-  grid-template-columns: max-content 1fr;
+  grid-template-columns: max-content 100%;
   max-width: 90rem;
   margin: 0 auto;
 }
@@ -916,7 +916,8 @@ body {
   margin-bottom: 1rem;
 }
 .skills__column {
-  display: flex;
+  display: grid;
+  grid-template-columns: min-content 1fr;
   align-items: center;
   -moz-column-gap: 3rem;
        column-gap: 3rem;
@@ -946,7 +947,8 @@ body {
 }
 .skills__column-list {
   flex: 0 1 100%;
-  display: flex;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
   text-align: center;
   -moz-column-gap: 0.5rem;
        column-gap: 0.5rem;
@@ -1114,6 +1116,17 @@ body {
   .main__tools {
     padding: 0 0 0 2rem;
   }
+  .projects__list {
+    grid-template-columns: 1fr;
+  }
+  .skills__column {
+    grid-template-columns: 1fr;
+    row-gap: 1.5rem;
+  }
+  .tools__list-column {
+    grid-template-columns: 1fr;
+    row-gap: 1.5rem;
+  }
 }
 @media (max-width: 991.98px) {
   .experience__list-item {
@@ -1122,11 +1135,16 @@ body {
   }
   .skills__column {
     flex-direction: column;
-    align-items: flex-start;
   }
   .skills__column-list {
-    flex: 0 1 100%;
-    justify-content: space-around;
+    grid-template-columns: repeat(2, 1fr);
+    row-gap: 0.5rem;
+  }
+  .tools__column-items {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .tools__column-items-second {
+    grid-template-columns: repeat(2, 1fr);
   }
 }
 @media (max-width: 767.98px) {
@@ -1134,5 +1152,18 @@ body {
     display: grid;
     grid-template-columns: 1fr;
     padding: 0 15px;
+  }
+  .courses__list-item {
+    flex-direction: column;
+    row-gap: 8px;
+  }
+  .skills__column-list {
+    grid-template-columns: 1fr;
+  }
+  .tools__column-items {
+    grid-template-columns: 1fr;
+  }
+  .tools__column-items-second {
+    grid-template-columns: 1fr;
   }
 }/*# sourceMappingURL=style.css.map */
