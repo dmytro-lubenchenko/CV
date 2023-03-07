@@ -534,7 +534,7 @@ body {
 	}
 	&__list {
 		display: grid;
-		grid-template-columns: 1fr 1fr;
+		grid-template-columns: repeat(2, 1fr);
 		justify-items: center;
 		gap: 0.5rem;
 		overflow: hidden;
@@ -542,6 +542,7 @@ body {
 	}
 	&__list-item {
 		display: flex;
+		width: 100%;
 		flex-direction: column;
 		padding: 1.5rem;
 		background-color: #2e2e48;
@@ -1615,7 +1616,7 @@ body {
 		}
         display: grid;
         grid-template-columns: 1fr;
-        padding: 0 15px;
+        padding: 0 5px;
 	}
 	.aside {
 		&__personal {
@@ -1904,14 +1905,14 @@ body {
 		&__column-subject {
 		}
 		&__column-items {
-			grid-template-columns: 1fr;
+			grid-template-columns: repeat(2, 1fr);
 		}
 		&__list-item {
 			&:not(.tools__column-items-second .tools__list-item) {
 				display: flex;
-				justify-content: space-between;
+				flex-direction: column;
+				row-gap: .5rem;
 				align-items: center;
-				padding: 1rem 1rem;
 			}
 		}
 		&__list-icon {
@@ -1921,9 +1922,9 @@ body {
 		&__list-subject {
 		}
 		&__column-items-second {
-			grid-template-columns: 1fr;
+			grid-template-columns: repeat(2, 1fr);
 			&> :last-child {
-				grid-column: 1;
+				grid-column: span 2;
 			}
 		}
 		&__list-icon-rounded {
@@ -1933,4 +1934,192 @@ body {
 		&__list-description {
 		}
 	}
+}
+
+@media (max-width: 400px) {
+	.wrapper {
+		&__aside {}
+		&__main {}
+	}
+	.aside {
+			&__personal {}
+			&__contacts {}
+			&__social {}
+			&__languages {}
+	}
+	.personal {
+			&__image {}
+			&__userpic {}
+			&__heading {}
+			&__heading-title {}
+			&__heading-position {}
+			&__quote {}
+			&__quote-text {}
+			&__quote-author {}
+	}
+	.aside--hr {
+	}
+	.contacts {
+			&__caption {}
+			&__list {}
+			&__list-item {}
+			&__list-icon {}
+			&__list-ico {}
+			&__list-content {}
+			&__list-subject {}
+			&__list-link {}
+	}
+	.social {
+			&__caption {}
+			&__list {}
+			&__list-item {}
+			&__list-icon {}
+			&__list-ico {}
+			&__list-content {}
+			&__list-subject {}
+			&__list-link {}
+	}
+	.github {
+	}
+	.linkedin {
+	}
+	.djinni {
+	}
+	.languages {
+			&__caption {}
+			&__list {}
+			&__list-item {}
+			&__list-icon {}
+			&__list-ico {}
+			&__list-content {}
+			&__list-subject {}
+			&__list-link {}
+	}
+	.main {
+			&__about {}
+			&__experience {}
+			&__projects {}
+			&__education {}
+			&__courses {}
+			&__skills {}
+			&__tools {}
+	}
+	.about {
+			&__title {}
+			&__text {}
+	}
+	.title {
+	}
+	.experience {
+			&__title {}
+			&__list {}
+			&__list-item {}
+			&__list-content {}
+			&__list-story {}
+			&__list-period {}
+			&__list-location {}
+			&__list-role {}
+			&__list-icon {}
+			&__list-ico {}
+			&__list-body {}
+			&__list-company {}
+			&__list-position {}
+			&__list-description {}
+	}
+	.present {
+	}
+	.list {
+			&__period {}
+	}
+	.list-description {
+			&__item {}
+	}
+	.projects {
+			&__title {}
+			&__list {}
+			&__list-item {}
+			&__list-image {}
+			&__list-img {}
+			&__list-subject {}
+			&__list-text {}
+			&__list-content {}
+			&__list-icon {}
+			&__list-ico {}
+			&__list-link {}
+	}
+	.education {
+			&__title {}
+			&__list {}
+			&__list-item {}
+			&__list-content {}
+			&__list-icon {}
+			&__list-ico {}
+			&__list-subject {}
+			&__list-profession {}
+			&__list-story {}
+			&__list-period {}
+			&__list-location {}
+	}
+	.courses {
+			&__title {}
+			&__list {}
+			&__list-item {}
+			&__list-role {}
+			&__list-icon {}
+			&__list-ico {}
+			&__list-body {}
+			&__list-theme {}
+			&__list-company {}
+			&__list-story {}
+			&__list-period {}
+			&__list-location {}
+	}
+	.soft-serve {
+	}
+	.epam {
+	}
+	.go-it {
+	}
+	.skills {
+			&__title {}
+			&__column {}
+			&__column-header {}
+			&__column-icon {}
+			&__column-ico {}
+			&__column-subject {}
+			&__column-list {}
+			&__column-item {}
+			&__column-skill {}
+			&__column-second-grid {}
+			&__column-span {}
+			&__column-vertical {}
+			&__column-grid {}
+			&__column-horizontal {}
+	}
+	.column-skills {
+	}
+	.tools {
+			&__title {}
+			&__list {}
+			&__list-column {}
+			&__column-header {}
+			&__column-icon {}
+			&__column-ico {}
+			&__column-subject {}
+			&__column-items {}
+			&__list-item {}
+			&__list-icon {}
+			&__list-ico {}
+			&__list-subject {}
+			&__column-items-second {
+				grid-template-columns: 1fr;
+				&> :last-child {
+					grid-column: 1;
+				}
+			}
+			&__list-icon-rounded {}
+			&__list-ico-rounded {}
+			&__list-description {}
+	}
+
 }

@@ -1152,7 +1152,7 @@ body {
   .wrapper {
     display: grid;
     grid-template-columns: 1fr;
-    padding: 0 5px;
+    padding: 0 15px;
   }
   .courses__list-item {
     flex-direction: column;
@@ -1168,22 +1168,14 @@ body {
     grid-template-columns: 1fr;
   }
   .tools__column-items {
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: 1fr;
   }
   .tools__list-item:not(.tools__column-items-second .tools__list-item) {
     display: flex;
-    flex-direction: column;
-    row-gap: 0.5rem;
+    justify-content: space-between;
     align-items: center;
+    padding: 1rem 1rem;
   }
-  .tools__column-items-second {
-    grid-template-columns: repeat(2, 1fr);
-  }
-  .tools__column-items-second > :last-child {
-    grid-column: span 2;
-  }
-}
-@media (max-width: 400px) {
   .tools__column-items-second {
     grid-template-columns: 1fr;
   }
