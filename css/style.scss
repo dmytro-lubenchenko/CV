@@ -1585,12 +1585,6 @@ body {
 			grid-template-columns: repeat(2, 1fr);
 		}
 		&__list-item {
-			&:not(.tools__column-items-second .tools__list-item) {
-				display: flex;
-				justify-content: space-between;
-				align-items: center;
-				padding: 1rem 1rem;
-			}
 		}
 		&__list-icon {
 		}
@@ -1600,6 +1594,9 @@ body {
 		}
 		&__column-items-second {
 			grid-template-columns: repeat(2, 1fr);
+			&> :last-child {
+				grid-column: 1 / span 2;
+			}
 		}
 		&__list-icon-rounded {
 		}
@@ -1910,6 +1907,12 @@ body {
 			grid-template-columns: 1fr;
 		}
 		&__list-item {
+			&:not(.tools__column-items-second .tools__list-item) {
+				display: flex;
+				justify-content: space-between;
+				align-items: center;
+				padding: 1rem 1rem;
+			}
 		}
 		&__list-icon {
 		}
@@ -1919,6 +1922,9 @@ body {
 		}
 		&__column-items-second {
 			grid-template-columns: 1fr;
+			&> :last-child {
+				grid-column: 1;
+			}
 		}
 		&__list-icon-rounded {
 		}
